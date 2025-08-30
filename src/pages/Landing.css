@@ -1,0 +1,16 @@
+.landing {
+  padding: 40px;
+  text-align: center;
+}
+
+.landing h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.landing p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
