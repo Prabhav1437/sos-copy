@@ -1,15 +1,15 @@
-import "./Navbar.css";
+// src/components/Navbar.jsx
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="logo">SOS Emergency</h1>
-      <ul className="nav-links">
+      <div className="navbar-logo">SOS Emergency</div>
+      <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/signup">Signup</Link></li>
-        <li><Link to="/account">Account</Link></li>
-        <li><Link to="/qr">QR Code</Link></li>
+        <li><Link to="/signup">Sign Up</Link></li>
+        <li><Link to="/dashboard">Dashboard</Link></li>
       </ul>
     </nav>
   );
