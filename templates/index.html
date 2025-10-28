@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Connect - Emergency Response Reimagined</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="bg-animated">
+        <div class="bg-grid"></div>
+        <div class="glow-orb orb1"></div>
+        <div class="glow-orb orb2"></div>
+        <div class="glow-orb orb3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SOS Connect</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how">How It Works</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">☀️</span>
+                </button>
+                <button class="btn-signup" onclick="window.location.href='signup.html'">Signup</button>
+                <button class="btn-login" onclick="window.location.href='login.html'">Login</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge">
+                <span class="pulse"></span>
+                <span>Live in 50+ Countries</span>
+            </div>
+            <h1>Emergency Response <span class="gradient-text">Reimagined</span></h1>
+            <p class="hero-subtitle">Instant access to critical medical information when every second counts. One scan connects you to life-saving care.</p>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="window.location.href='signup.html'">Get Started</button>
+                <button class="btn-secondary" onclick="document.querySelector('#features').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat reveal">
+                <div class="stat-num">99.9%</div>
+                <div class="stat-label">Uptime Reliability</div>
+            </div>
+            <div class="stat reveal">
+                <div class="stat-num">&lt;2s</div>
+                <div class="stat-label">Response Time</div>
+            </div>
+            <div class="stat reveal">
+                <div class="stat-num">24/7</div>
+                <div class="stat-label">Global Access</div>
+            </div>
+            <div class="stat reveal">
+                <div class="stat-num">256-bit</div>
+                <div class="stat-label">Encryption</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Features</span>
+                <h2>Built for Critical Moments</h2>
+                <p class="section-desc">Advanced technology designed to save lives through instant information access.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature reveal">
+                    <div class="feature-icon">01</div>
+                    <h3>Instant Profile Access</h3>
+                    <p>Complete medical history, allergies, medications, and emergency contacts in under 2 seconds.</p>
+                </div>
+                <div class="feature reveal">
+                    <div class="feature-icon">02</div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Military-grade 256-bit encryption. HIPAA compliant infrastructure ensures privacy.</p>
+                </div>
+                <div class="feature reveal">
+                    <div class="feature-icon">03</div>
+                    <h3>Universal Compatibility</h3>
+                    <p>Works with any smartphone. No app required. Accessible anywhere, anytime.</p>
+                </div>
+                <div class="feature reveal">
+                    <div class="feature-icon">04</div>
+                    <h3>Real-Time Updates</h3>
+                    <p>Update instantly from any device. Changes sync across all credentials immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="how">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Process</span>
+                <h2>Protection in Three Steps</h2>
+                <p class="section-desc">Get started in minutes and gain peace of mind for life.</p>
+            </div>
+            <div class="process-grid">
+                <div class="step reveal">
+                    <div class="step-num">1</div>
+                    <h3>Create Profile</h3>
+                    <p>Register your medical information and emergency contacts in our secure platform.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-num">2</div>
+                    <h3>Get QR Code</h3>
+                    <p>Receive your unique, encrypted QR code linked to your emergency profile.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-num">3</div>
+                    <h3>Stay Protected</h3>
+                    <p>First responders can access your info instantly when it matters most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-box reveal">
+            <h2>Ready to Protect What Matters?</h2>
+            <p>Join thousands who trust SOS Connect for emergency preparedness.</p>
+            <button class="btn-primary" onclick="window.location.href='signup.html'">Get Started Now</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span>SOS Connect</span>
+                    </div>
+                    <p class="footer-desc">Emergency response reimagined. Instant access to critical medical information when every second counts.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">In</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Compliance</a></li>
+                        <li><a href="#">Licenses</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 SOS Connect. Your safety, our mission. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
