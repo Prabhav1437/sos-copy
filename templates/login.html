@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SOS Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+      /* small page-specific form tweaks that inherit the main theme */
+      .auth-section { min-height: 80vh; display:flex; align-items:center; justify-content:center; padding:6rem 2rem; }
+      .auth-card { max-width:480px; width:100%; padding:2rem; border-radius:14px; }
+      .auth-card h2 { margin-bottom:1rem; font-family: 'Space Grotesk', sans-serif; }
+      .form-group { margin-bottom:1rem; }
+      .form-group label { display:block; font-weight:600; margin-bottom:0.4rem; color:var(--text); }
+      .form-group input { width:100%; padding:0.75rem 1rem; border-radius:8px; border:1px solid var(--border); background:var(--bg-card); color:var(--text); }
+      .form-actions { display:flex; gap:0.75rem; margin-top:1rem; }
+      .form-message { margin-top:0.75rem; font-size:0.95rem; color:var(--text-secondary); }
+      .alert-success { color: #67E8A2; }
+      .alert-error { color: #FFB4AB; }
+    </style>
+</head>
+<body>
+    <div class="bg-animated">
+        <div class="bg-grid"></div>
+        <div class="glow-orb orb1"></div>
+        <div class="glow-orb orb2"></div>
+        <div class="glow-orb orb3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SOS Connect</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how">How It Works</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">☀️</span>
+                </button>
+                <button class="btn-signup" onclick="window.location.href='signup.html'">Signup</button>
+                <button class="btn-login" onclick="window.location.href='login.html'">Login</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="auth-section">
+        <div class="auth-card feature"> <!-- reuse feature/card styles for consistent look -->
+            <h2>Welcome back</h2>
+            <p class="form-message">Sign in to access your SOS Connect profile.</p>
+
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Sign in</button>
+                    <button type="button" class="btn-secondary" onclick="window.location.href='signup.html'">Create account</button>
+                </div>
+
+                <div id="loginMessage" class="form-message" role="status" aria-live="polite"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 SOS Connect. Your safety, our mission.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
