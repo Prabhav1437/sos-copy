@@ -142,7 +142,33 @@
     </section>
 
     <footer id="footer">
+        <div class="footer-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#FF0055"/>
+                        <stop offset="100%" stop-color="#00E5FF"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,20 1440,60 L1440,120 L0,120 Z" fill="url(#waveGrad)" opacity="0.15"></path>
+            </svg>
+        </div>
         <div class="footer-container">
+            <div class="footer-orb orb-a" aria-hidden="true"></div>
+            <div class="footer-orb orb-b" aria-hidden="true"></div>
+            <div class="footer-orb orb-c" aria-hidden="true"></div>
+
+            <section class="footer-newsletter reveal" aria-label="Subscribe for updates">
+                <h3>Stay ahead with product updates</h3>
+                <p>Actionable security tips, release notes, and early access. No spam.</p>
+                <form id="newsletterForm" class="newsletter-form" novalidate>
+                    <div class="newsletter-fields">
+                        <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email" aria-label="Email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </div>
+                    <p class="newsletter-message" id="newsletterMessage" role="status" aria-live="polite"></p>
+                </form>
+            </section>
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
@@ -215,6 +241,7 @@
                 </ul>
             </div>
         </div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
     </footer>
 
     <script src="../static/js/main.js"></script>
